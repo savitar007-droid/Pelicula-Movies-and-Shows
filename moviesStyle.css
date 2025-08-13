@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+  overflow: hidden;
+  height: 100vh;
+  margin: 0;
+}
+
+.hero-banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Background slideshow with circular vignette */
+.background-slideshow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: opacity 1s ease-in-out;
+  z-index: 0;
+}
+
+/* Circular vignette shadow around edges */
+.background-slideshow::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0) 45%,
+    rgba(0, 0, 0, 0.7) 90%,
+    rgba(0, 0, 0, 0.85) 100%
+  );
+}
+
+/* Movie info container */
+.movie-info {
+  position: relative;
+  z-index: 2;
+  top: 50%;
+  left: 60px;
+  transform: translateY(-50%);
+  max-width: 600px;
+}
+
+.movie-title {
+  font-size: 64px;
+  font-weight: bold;
+  color: white;
+}
+
+.movie-title span {
+  color: #ff0000; /* red highlight */
+}
+
+.languages {
+  color: #ccc;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.description {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #ddd;
+  line-height: 1.5;
+}
+
+.watch-button {
+  margin-top: 25px;
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.watch-button:hover {
+  background-color: #cc0000;
+}
+
+/* Small persistent image */
+.persistent-image {
+  display: block;
+  width: 160px;       /* increased size */
+  margin-top: 15px;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  height: auto;       /* maintain aspect ratio */
+}
+
+.persistent-image:hover {
+  transform: scale(1.1);
+}
+
