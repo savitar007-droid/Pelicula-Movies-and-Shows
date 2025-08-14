@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    position: relative;
+    min-height: 100vh;
+
+    /* Background image applied directly on body */
+    background-image: url('MoneyHeist.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Remove the ::before overlay completely, no opacity needed */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 5px;
+    /* No background-color */
+}
+
+.logo {
+    height: 50px;
+    cursor: pointer;
+    margin-left: -5px;
+}
+
+.center-buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.search-bar {
+    padding: 6px 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    width: 180px;
+    transition: box-shadow 0.3s ease;
+}
+
+.search-bar:focus {
+    box-shadow: 0 0 5px #ff0000;
+}
+
+.center-buttons a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.center-buttons a:hover {
+    color: #ff0000;
+    transform: translateY(-5px);
+}
+
+.account-icon {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.container-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 60px);
+}
+
+.container {
+    max-width: 600px;
+    text-align: center;
+}
+
+.links a {
+    color: #ff0000;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.links a:hover {
+    transform: translateY(-5px);
+}

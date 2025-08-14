@@ -1,0 +1,124 @@
+/* Full Page Layout */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+/* Header container to wrap logo and line */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+    padding: 10px 20px 0 20px;
+}
+
+/* Logo Positioning */
+.logo {
+    width: 150px;
+    height: auto;
+    display: block;
+}
+
+/* Light horizontal line under logo */
+.logo-line {
+    margin-top: 5px;
+    width: 100%;
+    height: 1px;
+    background-color: #cccccc; /* light gray line */
+}
+
+/* About Us Button (styled like Register button) */
+.AboutUs-button {
+    position: absolute;
+    top: 15px;
+    right: 60px;
+    background-color: #ff0000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 1001;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.AboutUs-button:hover {
+        transform: scale(1.05);
+    box-shadow: 0 0 8px #ff6666;
+}
+
+/* Smaller Container */
+.container {
+    width: 90%;
+    max-width: 300px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    text-align: center;
+    color: #000000;
+    margin-top: 120px; /* pushes content below the header */
+}
+
+/* Heading */
+h1 {
+    font-weight: bold;
+    font-size: 22px;
+    color: #000000;
+}
+
+/* Input Fields */
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #000000;
+    background-color: #f9f9f9;
+}
+
+/* Submit Button (Register) */
+input[type="submit"] {
+    background-color: #ff0000;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #cc0000;
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #ff6666;
+}
+
+/* Link Style */
+a {
+    text-decoration: none;
+    color: #ff0000;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+a:hover {
+    color: #cc0000;
+}
